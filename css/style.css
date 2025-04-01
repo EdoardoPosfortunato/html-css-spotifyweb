@@ -26,13 +26,20 @@ a {
     border: dotted red 5px;
 }
 
+
+/* DISPLAY NONE */
+
+#logo-small{
+    display: none;
+}
+
 /* layout */
 
 
 
 :root{
     --seek-height: 7vh;
-    --nav-width: 15%;
+    --nav-width: 150px;
     --card-width: calc((100%)/6);
     --fix-bar-height: 100px;
 }
