@@ -31,9 +31,103 @@ a {
 .wrapper{
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+:root{
+    --seek-height: 10%;
+    --nav-width: 25%;
+    --card-width: calc((100%)/6);
 }
 
 
-main{
-    
+/* MAIN */
+
+.main{
+    display: flex;
+    height: calc(100% - var(--seek-height));
+}
+
+
+/* COL LEFT */
+
+.col-left{
+    width: var(--nav-width);
+    background-color: black;
+    color: #6E6E6E;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+
+
+/* COL RIGHT */
+
+.col-right{
+    width: calc(100% - var(--nav-width));
+    background-color: #141922;
+    color: white;
+
+    .fix-bar{
+        background-color: #080B12;
+
+        .upgrade{
+            text-align: end;
+            padding: 20px;
+
+        }
+
+        .nav-bar ul{
+            color: #73757A;
+            display: flex;
+            justify-content: center;
+            background-color: #141922;
+
+            li{
+                margin: 5px;
+            }
+        }
+
+    }
+
+    .play-window{
+        height: 40%;
+
+        .songs{
+            display: flex;
+            flex-wrap: wrap;
+
+            .song-card{
+                width: var(--card-width);
+                display: flex;
+                flex-direction: column;
+
+                img{
+                    height: 60%;
+                }
+            }
+
+        }
+
+    }
+
+
+
+
+}
+
+
+
+/* SEEK BAR */
+
+.seek-bar{
+    height: var(--seek-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #282828;
 }
