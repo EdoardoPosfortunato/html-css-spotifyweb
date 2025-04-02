@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -53,51 +54,77 @@
         <div class="col-right">
             <div class="fix-bar">
                 <div class="upgrade">
-                    <button>Effettua Upgrade</button>
+                    <button class="upgrade-btn">Effettua Upgrade</button>
                 </div>
                 <div class="nav-bar">
                     <ul>
-                        <li>link <br></li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
+                        <li>IN EVIDENZA</li>
+                        <li>PODCAST</li>
+                        <li>CLASSIFICHE</li>
+                        <li>GENERI E MOOD</li>
+                        <li>NUOVE USCITE</li>
+                        <li>SCOPRI</li>
                     </ul>
                 </div>
             </div>
             <div class="play-window">
                 <div class="song-bar">
-                    <h2>Recently Played</h2>
+                    <div class="division-title">
+                        <h2>Recently Played</h2>
+                    </div>
                     <div class="songs">
                         <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
+                            <div class="card-img">
+                                <img class="album" src="./img/metal_lifting.jpg" alt="">
+                                <div class="opaque"></div>
+                                <i class="fa-regular fa-circle-play play-music"></i>
+                            </div>
                             <h4> Heavy Metal</h4>
                             <span>Subtitle</span>
                         </div>
                         <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
-                            <h4> Heavy Metal</h4>
+                            <div class="card-img">
+                                <img class="album" src="./img/stranger.jpeg" alt="">
+                                <div class="opaque"></div>
+                                <i class="fa-regular fa-circle-play play-music"></i>
+                            </div>
+                            <h4>Stranger Thinks, </h4>
                             <span>Subtitle</span>
                         </div>
                         <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
-                            <h4> Heavy Metal</h4>
+                            <div class="card-img">
+                                <img class="album" src="./img/aquietplace.jpeg" alt="">
+                                <div class="opaque"></div>
+                                <i class="fa-regular fa-circle-play play-music"></i>
+                            </div>
+                            <h4>A quiet Place</h4>
                             <span>Subtitle</span>
                         </div>
                         <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
-                            <h4> Heavy Metal</h4>
+                            <div class="card-img">
+                                <img class="album" src="./img/split.jpeg" alt="">
+                                <div class="opaque"></div>
+                                <i class="fa-regular fa-circle-play play-music"></i>
+                            </div>
+                            <h4>Split</h4>
                             <span>Subtitle</span>
                         </div>
                         <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
-                            <h4> Heavy Metal</h4>
+                            <div class="card-img">
+                                <img class="album" src="./img/cure.jpeg" alt="">
+                                <div class="opaque"></div>
+                                <i class="fa-regular fa-circle-play play-music"></i>
+                            </div>
+                            <h4>A cure for wellness</h4>
                             <span>Subtitle</span>
                         </div>
                         <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
-                            <h4> Heavy Metal</h4>
+                            <div class="card-img">
+                                <img class="album" src="./img/sinister.jpeg" alt="">
+                                <div class="opaque"></div>
+                                <i class="fa-regular fa-circle-play play-music"></i>
+                            </div>
+                            <h4>Sinister</h4>
                             <span>Subtitle</span>
                         </div>
 
@@ -105,97 +132,129 @@
                     </div>
                 </div>
                 <div class="song-bar">
-                    <h2>Recently Played</h2>
+                    <div class="division-title">
+                        <h2>Creato per John Doe</h2>
+                        <p>Più ascoltati, più accurati saranno i suggerimenti </p>
+                    </div>
                     <div class="songs">
                         <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
+                            <div class="card-img">
+                                <img class="album" src="./img/mixdaily.jpeg" alt="">
+                                <div class="opaque"></div>
+                                <i class="fa-regular fa-circle-play play-music"></i>
+                            </div>
+                            <h4>Release Radar</h4>
+                        </div>
+                        <div class="song-card">
+                            <div class="card-img">
+                                <img class="album" src="./img/metal_lifting.jpg" alt="">
+                                <div class="opaque"></div>
+                                <i class="fa-regular fa-circle-play play-music"></i>
+                            </div>
+                            <h4> Heavy Metal</h4>
+                            <span>Subtitle</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="song-bar">
+                    <div class="division-title">
+                        <h2>Creato per John Doe</h2>
+                        <p>Più ascoltati, più accurati saranno i suggerimenti </p>
+                    </div>
+                    <div class="songs">
+                        <div class="song-card">
+                            <div class="card-img">
+                                <img class="album" src="./img/metal_lifting.jpg" alt="">
+                                <div class="opaque"></div>
+                                <i class="fa-regular fa-circle-play play-music"></i>
+                            </div>
                             <h4> Heavy Metal</h4>
                             <span>Subtitle</span>
                         </div>
                         <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
+                            <div class="card-img">
+                                <img class="album" src="./img/metal_lifting.jpg" alt="">
+                                <div class="opaque"></div>
+                                <i class="fa-regular fa-circle-play play-music"></i>
+                            </div>
                             <h4> Heavy Metal</h4>
                             <span>Subtitle</span>
                         </div>
                         <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
+                            <div class="card-img">
+                                <img class="album" src="./img/metal_lifting.jpg" alt="">
+                                <div class="opaque"></div>
+                                <i class="fa-regular fa-circle-play play-music"></i>
+                            </div>
                             <h4> Heavy Metal</h4>
                             <span>Subtitle</span>
                         </div>
                         <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
+                            <div class="card-img">
+                                <img class="album" src="./img/metal_lifting.jpg" alt="">
+                                <div class="opaque"></div>
+                                <i class="fa-regular fa-circle-play play-music"></i>
+                            </div>
                             <h4> Heavy Metal</h4>
                             <span>Subtitle</span>
                         </div>
                         <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
+                            <div class="card-img">
+                                <img class="album" src="./img/metal_lifting.jpg" alt="">
+                                <div class="opaque"></div>
+                                <i class="fa-regular fa-circle-play play-music"></i>
+                            </div>
                             <h4> Heavy Metal</h4>
                             <span>Subtitle</span>
                         </div>
-                        <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
-                            <h4> Heavy Metal</h4>
-                            <span>Subtitle</span>
-                        </div>
-
-
                     </div>
                 </div>
                 <div class="song-bar">
                     <h2>Recently Played</h2>
                     <div class="songs">
                         <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
+                            <div class="card-img">
+                                <img class="album" src="./img/metal_lifting.jpg" alt="">
+                                <div class="opaque"></div>
+                                <i class="fa-regular fa-circle-play play-music"></i>
+                            </div>
                             <h4> Heavy Metal</h4>
                             <span>Subtitle</span>
                         </div>
                         <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
+                            <div class="card-img">
+                                <img class="album" src="./img/metal_lifting.jpg" alt="">
+                                <div class="opaque"></div>
+                                <i class="fa-regular fa-circle-play play-music"></i>
+                            </div>
                             <h4> Heavy Metal</h4>
                             <span>Subtitle</span>
                         </div>
                         <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
+                            <div class="card-img">
+                                <img class="album" src="./img/metal_lifting.jpg" alt="">
+                                <div class="opaque"></div>
+                                <i class="fa-regular fa-circle-play play-music"></i>
+                            </div>
                             <h4> Heavy Metal</h4>
                             <span>Subtitle</span>
                         </div>
                         <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
+                            <div class="card-img">
+                                <img class="album" src="./img/metal_lifting.jpg" alt="">
+                                <div class="opaque"></div>
+                                <i class="fa-regular fa-circle-play play-music"></i>
+                            </div>
                             <h4> Heavy Metal</h4>
                             <span>Subtitle</span>
                         </div>
                         <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
-                            <h4> Heavy Metal</h4>
-                            <span>Subtitle</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="song-bar">
-                    <h2>Recently Played</h2>
-                    <div class="songs">
-                        <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
-                            <h4> Heavy Metal</h4>
-                            <span>Subtitle</span>
-                        </div>
-                        <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
-                            <h4> Heavy Metal</h4>
-                            <span>Subtitle</span>
-                        </div>
-                        <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
-                            <h4> Heavy Metal</h4>
-                            <span>Subtitle</span>
-                        </div>
-                        <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
-                            <h4> Heavy Metal</h4>
-                            <span>Subtitle</span>
-                        </div>
-                        <div class="song-card">
-                            <img src="./img/metal_lifting.jpg" alt="">
+                            <div class="card-img">
+                                <img class="album" src="./img/metal_lifting.jpg" alt="">
+                                <div class="opaque"></div>
+                                <i class="fa-regular fa-circle-play play-music"></i>
+                            </div>
                             <h4> Heavy Metal</h4>
                             <span>Subtitle</span>
                         </div>

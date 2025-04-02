@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+
 }
 
 img {
@@ -22,40 +22,40 @@ a {
 
 /* debug */
 
-.dotted{
+.dotted {
     border: dotted red 5px;
 }
 
 
 /* DISPLAY NONE */
 
-#logo-big{
+#logo-big {
     padding-top: 10px;
     width: 80%;
 }
 
-#logo-small{
+#logo-small {
     display: none;
 }
 
 /* layout */
 
-body{
+body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    /* font-weight: weight; */
     font-style: normal;
 }
 
 
-:root{
+:root {
     --seek-height: 7vh;
     --nav-width: 200px;
-    --card-width: calc((100%)/6);
+    --card-width: calc((90%)/6);
     --fix-bar-height: 100px;
 }
 
-.wrapper{
+.wrapper {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -68,10 +68,10 @@ body{
 
 /* COL LEFT */
 
-.col-left{
+.col-left {
     width: var(--nav-width);
     background-color: black;
-    
+
     color: #6E6E6E;
     display: flex;
     flex-direction: column;
@@ -80,81 +80,81 @@ body{
     padding-bottom: calc(var(--seek-height) + 15px);
 
 
-  
+
 
     .logo,
     li,
     .play h2,
     .play span,
-    .admin{
+    .admin {
         padding-left: 20px;
         padding-right: ;
     }
 
 
-    .main-nav{
+    .main-nav {
         flex-grow: 1;
         padding: 30px 0px;
         display: flex;
-        gap:15px;
+        gap: 15px;
         flex-direction: column;
 
-        .navigation ul li{
+        .navigation ul li {
             display: flex;
-            gap:10px;
+            gap: 10px;
             height: 30px;
             align-items: center;
             width: 90%;
             border-left: black 7px solid;
 
-            i{
+            i {
                 font-size: 1.2rem;
                 width: 15%;
-                
+
             }
 
         }
 
-        
 
-        .play{
 
-            h2{
+        .play {
+
+            h2 {
                 color: white;
                 margin-bottom: 20px;
                 font-size: 1.1rem;
             }
 
-            span{
+            span {
                 display: flex;
                 align-items: center;
-                gap:5px;
+                gap: 5px;
                 margin-bottom: 20px;
             }
 
-            i{
+            i {
                 font-size: 1.7rem;
             }
 
-            li{
+            li {
                 margin-bottom: 10px;
             }
         }
 
     }
 
-    .admin{
+    .admin {
         padding-right: 20px;
 
-        span{
+        span {
             display: flex;
             padding-bottom: 10px;
             align-items: center;
             gap: 7px;
         }
 
-        .user{
-            color:white;
+        .user {
+            color: white;
             padding-top: 17px;
         }
     }
@@ -163,24 +163,25 @@ body{
     /* COL-LEFT:HOVER */
 
 
-    .navigation ul li:hover{
+    .navigation ul li:hover {
         color: white;
         border-left: solid 7px green;
     }
 
-    .play{
-        span:hover{
+    .play {
+        span:hover {
             color: white;
+            transform: scale(1.1);
         }
-        
-        li:hover{
+
+        li:hover {
             color: white;
         }
     }
 
-    .admin{
+    .admin {
 
-        span:hover{
+        span:hover {
             color: white;
         }
     }
@@ -191,64 +192,206 @@ body{
 
 /* COL RIGHT */
 
-.col-right{
+.col-right {
     width: calc(100% - var(--nav-width));
     background-color: #141922;
     color: white;
     position: relative;
     overflow: auto;
 
-    .fix-bar{
+    .fix-bar {
         position: sticky;
         width: 100%;
-        height: var(--fix-bar-height);
+        z-index: 9999;
+        /* height: var(--fix-bar-height); */
         top: 0;
-        
 
-        .upgrade{
+
+        .upgrade {
             background-color: rgb(8, 11, 18);
             text-align: end;
             padding: 20px;
 
+            .upgrade-btn {
+                all: unset;
+                font-size: 0.8rem;
+                color: white;
+                background-color: rgba(8, 11, 18, 0);
+                border: white solid 2px;
+                border-radius: 20px;
+                padding: 10px 25px;
+
+            }
+
         }
 
-        .nav-bar ul{
+
+        .nav-bar ul {
             color: #73757A;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             background-color: #141922;
+            gap: 35px;
 
-            li{
-                margin: 10px;
-                width: 100px;
+
+            li {
+                padding-top: 20px;
+                padding-bottom: 8px;
+                font-size: 0.8rem;
+                font-weight: 600;
+                text-align: center;
+                display: inline-block;
+                position: relative;
+            }
+
+            li:hover::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                width: 40%;
+                height: 3px;
+                background-color: #ADFF2F;
+                transform: translateX(-50%);
+            }
+
+            li:hover {
+                color: white;
             }
         }
 
     }
 
-    .play-window{
+    .play-window {
         height: 100%;
-        /* overflow-y: auto; */
-        /* padding-top: var(--fix-bar-height); */
+        padding-top: 35px;
+        padding-left: 20px;
+        padding-right: 20px;
 
-        .songs{
+
+        .division-title{
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            h2{
+                font-size: 1.5rem;
+            }
+
+            p{
+                font-size: 0.7rem;
+                margin-top: 7px;
+            color: #6E6E6E;            }
+        }
+      
+
+
+
+        .songs {
             display: flex;
             flex-wrap: wrap;
+            margin-bottom: 20px;
+            gap: 10px;
+            /* justify-content: space-between; */
 
-            .song-card{
+            .song-card {
                 width: var(--card-width);
                 display: flex;
                 flex-direction: column;
+                align-items: center;
+                aspect-ratio: 9/12;
+                /* position: relative; */
+                
 
-                img{
-                    height: 60%;
+                h4 {
+                    margin-top: 10px;
+                    font-size: 0.8rem;
+                    overflow: hidden;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                span {
+                    margin-top: 7px;
+                    font-size: 0.8rem;
+                    color: #6E6E6E;
+                }
+
+
+                .card-img {
+                    position: relative;
+
+                    .album {
+                        height: 100%;
+                        /* padding: 10px; */
+                        
+
+                    }
+
+                    
                 }
             }
 
         }
 
     }
+
+
+    /* COL-RIGHT:HOVER */
+
+
+    .opaque{
+        display: none;
+        top: 0;
+        left: 0;
+        position: absolute;
+        padding:10px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .play-music {
+        display: none;
+        font-size: 5em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+
+    .fix-bar {
+        .upgrade {
+            .upgrade-btn:hover {
+                color: #6E6E6E;
+                border-color: #6E6E6E;
+                transform: scale(1.1);
+            }
+        }
+
+        .nav-bar ul {
+
+
+            li {}
+
+        }
+
+    }
+
+    .card-img:hover {
+
+        .opaque{
+            display: inline-block;
+        }
+
+        .play-music{
+            display: inline-block;
+        }
+
+    }
+
+
 
 
 
@@ -259,7 +402,7 @@ body{
 
 /* SEEK BAR */
 
-.seek-bar{
+.seek-bar {
     height: var(--seek-height);
     display: flex;
     justify-content: space-between;
@@ -271,13 +414,11 @@ body{
     width: 100%;
     bottom: 0;
 
-    .progress-bar{
-        
-    }
+    .progress-bar {}
 
 }
 
-br{
+br {
     display: block;
     height: 10px;
     color: red;
