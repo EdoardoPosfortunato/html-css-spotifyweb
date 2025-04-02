@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Montserrat", sans-serif;
+    
 }
 
 img {
@@ -29,17 +29,28 @@ a {
 
 /* DISPLAY NONE */
 
+#logo-big{
+    padding-top: 10px;
+    width: 80%;
+}
+
 #logo-small{
     display: none;
 }
 
 /* layout */
 
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
 
 
 :root{
     --seek-height: 7vh;
-    --nav-width: 150px;
+    --nav-width: 200px;
     --card-width: calc((100%)/6);
     --fix-bar-height: 100px;
 }
@@ -60,12 +71,120 @@ a {
 .col-left{
     width: var(--nav-width);
     background-color: black;
+    
     color: #6E6E6E;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5px 20px;
-    padding-bottom: var(--seek-height);
+    padding: 5px 0px;
+    padding-bottom: calc(var(--seek-height) + 15px);
+
+
+  
+
+    .logo,
+    li,
+    .play h2,
+    .play span,
+    .admin{
+        padding-left: 20px;
+        padding-right: ;
+    }
+
+
+    .main-nav{
+        flex-grow: 1;
+        padding: 30px 0px;
+        display: flex;
+        gap:15px;
+        flex-direction: column;
+
+        .navigation ul li{
+            display: flex;
+            gap:10px;
+            height: 30px;
+            align-items: center;
+            width: 90%;
+            border-left: black 7px solid;
+
+            i{
+                font-size: 1.2rem;
+                width: 15%;
+                
+            }
+
+        }
+
+        
+
+        .play{
+
+            h2{
+                color: white;
+                margin-bottom: 20px;
+                font-size: 1.1rem;
+            }
+
+            span{
+                display: flex;
+                align-items: center;
+                gap:5px;
+                margin-bottom: 20px;
+            }
+
+            i{
+                font-size: 1.7rem;
+            }
+
+            li{
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+
+    .admin{
+        padding-right: 20px;
+
+        span{
+            display: flex;
+            padding-bottom: 10px;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .user{
+            color:white;
+            padding-top: 17px;
+        }
+    }
+
+
+    /* COL-LEFT:HOVER */
+
+
+    .navigation ul li:hover{
+        color: white;
+        border-left: solid 7px green;
+    }
+
+    .play{
+        span:hover{
+            color: white;
+        }
+        
+        li:hover{
+            color: white;
+        }
+    }
+
+    .admin{
+
+        span:hover{
+            color: white;
+        }
+    }
+
 }
 
 
@@ -96,11 +215,13 @@ a {
         .nav-bar ul{
             color: #73757A;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             background-color: #141922;
 
             li{
-                margin: 5px;
+                margin: 10px;
+                width: 100px;
             }
         }
 
@@ -154,4 +275,10 @@ a {
         
     }
 
+}
+
+br{
+    display: block;
+    height: 10px;
+    color: red;
 }
