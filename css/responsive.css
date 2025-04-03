@@ -45,7 +45,17 @@
 
 @media screen and (max-width: 552px) {
 
+
+    :root {
+        --nav-width: 30px;
+    }
+
     .col-left {
+        padding-left: 0px;
+
+        .logo{
+            padding: 3px;
+        }
 
         #logo-big {
             display: none;
@@ -53,16 +63,35 @@
 
         #logo-small {
             display: block;
+            padding: 0px;
         }
 
-        .main-nav span{
+        .main-nav 
+        
+        {padding-top:  5px;
+            span{
             display: none;
         }
+    }
 
         .play{
             display: none;
         }
 
+        .main-nav .navigation ul li{
+            padding-left: 3px;
+            border: 0px;
+        }
+
+
+        .admin{
+            padding: 0px;
+            padding-left: 9px;
+
+            p, hr{
+                display: none;
+            }
+        }
     }
 
 }
